@@ -1,0 +1,132 @@
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #2d373e;
+    margin: 0;
+    background-color: #f4f3f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+    background-color: #acacac;
+    border-bottom: 1px solid gray;
+    left: 0;
+    height: 120px;
+    overflow: auto;
+    padding: 10px 20px 5px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.pageHeader {
+    border-bottom: 1px solid;
+    margin: 150px 20px 10px 20px;
+    padding-bottom: 0px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.App {
+    clear: both;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 100px;
+    margin-top: 10px;
+    clear: both;
+    text-align: center;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.header {
+    grid-column: span 12;
+    padding: 10px 20px;
+}
+
+.content {
+    grid-column: span 12;
+    width: 100%;
+    clear: both;
+}
+
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1124px) {
+    header {
+        position: relative;
+    }
+    .pageHeader {
+        grid-area: pageHeader;
+        grid-column: span 1;
+        border-bottom: 1px solid;
+        margin: 30px 20px 0 20px;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-rows: 10px 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "pageHeader" "content";
+        margin-top: 0;
+        margin-left: 28%;
+        margin-right: auto;
+    }
+    .content {
+        grid-area: content;
+        grid-column: span 1;
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        margin: 0 0;
+    }
+    header {
+        height: 90px;
+        overflow: auto;
+        padding: 0px 10px;
+        top: 0;
+    }
+    .header {
+        grid-column: span 6;
+    }
+    .header h1 {
+        line-height: 10px;
+    }
+    .wrapper {
+        display: grid;
+        margin: 2px auto;
+        clear: both;
+        transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        -webkit-transition: all 1s;
+    }
+    .pageHeader {
+        grid-area: pageHeader;
+        grid-column: span 1;
+        border-bottom: 1px solid;
+        margin: 0 20px;
+    }
+    .content {
+        grid-column: span 1;
+    }
+}

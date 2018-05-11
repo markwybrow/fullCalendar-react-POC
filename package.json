@@ -1,0 +1,47 @@
+{
+    "name": "FullCalendar-React-Wrapper-POC",
+    "version": "1.0.0",
+    "description": "Basic POC using the FullCalendar within a React framework as a component: WIP",
+    "main": "index.js",
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "setup": "npm i && npm start",
+        "eject": "react-scripts eject",
+        "enzyme": "^3.1.0",
+        "enzyme-adapter-react-16": "^1.0.1",
+        "eslint-plugin-react": "7.1.0"
+    },
+    "keywords": [],
+    "author": "Mark Wybrow mark.wybrow@outlook.com",
+    "license": "MIT",
+    "dependencies": {
+        "fullcalendar": "^3.9.0",
+        "fullcalendar-reactwrapper": "^1.0.7",
+        "jquery": "^3.3.1",
+        "jquery-ui": "^1.12.1",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-scripts": "1.0.17"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.16.0",
+        "babel-eslint": "^8.2.3",
+        "babel-plugin-transform-object-rest-spread": "^6.16.0",
+        "babel-preset-env": "^1.6.1",
+        "babelify": "^7.3.0",
+        "budo": "^9.2.1",
+        "copyfiles": "^2.0.0",
+        "eslint": "^4.19.1",
+        "eslint-config-mciparelli": "^0.10.0",
+        "eslint-config-prettier": "^2.9.0",
+        "husky": "^0.14.3",
+        "jquery": "^3.1.1",
+        "lint-staged": "^7.0.4",
+        "mkdirp": "^0.5.1",
+        "prettier": "^1.12.1",
+        "react": "^15.3.2",
+        "react-dom": "^15.3.2"
+    }
+}
